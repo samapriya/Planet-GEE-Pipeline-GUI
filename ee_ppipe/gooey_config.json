@@ -1,0 +1,796 @@
+{
+  "language_dir": "C:\\Python27\\ArcGIS10.4\\lib\\site-packages\\gooey\\languages", 
+  "num_optional_cols": 2, 
+  "num_required_cols": 2, 
+  "target": "\"C:\\Python27\\ArcGIS10.4\\python.exe\" -u \"ee_ppipe.py\"", 
+  "language": "english", 
+  "manual_start": false, 
+  "progress_expr": null, 
+  "disable_stop_button": false, 
+  "monospace_display": false, 
+  "default_size": [
+    610, 
+    530
+  ], 
+  "image_dir": "default", 
+  "group_by_type": true, 
+  "disable_progress_bar_animation": false, 
+  "auto_start": false, 
+  "widgets": {
+    "planet_key": {
+      "command": "planet_key", 
+      "contents": []
+    }, 
+    "aoijson": {
+      "command": "aoijson", 
+      "contents": [
+        {
+          "data": {
+            "commands": [
+              "--start"
+            ], 
+            "display_name": "start", 
+            "help": "Start date in YYYY-MM-DD?", 
+            "default": "Start date in YYYY-MM-DD", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "DateChooser"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--end"
+            ], 
+            "display_name": "end", 
+            "help": "End date in YYYY-MM-DD?", 
+            "default": "End date in YYYY-MM-DD", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "DateChooser"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--cloud"
+            ], 
+            "display_name": "cloud", 
+            "help": "Maximum Cloud Cover(0-1) representing 0-100", 
+            "default": "Maximum Cloud Cover(0-1)", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "TextField"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--inputfile"
+            ], 
+            "display_name": "inputfile", 
+            "help": "Choose a KML/SHP/geojson/WKT file or Landsat WRS", 
+            "default": "Choose a KML/SHP/geojson/WKT file or Landsat WRS", 
+            "nargs": "", 
+            "choices": [
+              "KML", 
+              "SHP", 
+              "GJSON", 
+              "WKT", 
+              "WRS"
+            ]
+          }, 
+          "required": false, 
+          "type": "Dropdown"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--geo"
+            ], 
+            "display_name": "geo", 
+            "help": "map.geojson/aoi.kml/aoi.shp/aoi.wkt file", 
+            "default": "map.geojson/aoi.kml/aoi.shp/aoi.wkt file or 6 digit WRS PathRow", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "MultiFileChooser"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--loc"
+            ], 
+            "display_name": "loc", 
+            "help": "Location where aoi.json file is to be stored", 
+            "default": null, 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "MultiDirChooser"
+        }
+      ]
+    }, 
+    "activatepl": {
+      "command": "activatepl", 
+      "contents": [
+        {
+          "data": {
+            "commands": [
+              "--aoi"
+            ], 
+            "display_name": "aoi", 
+            "help": "Choose JSON file created earlier", 
+            "default": "Choose JSON file to be used with Planet API/Created Earlier", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "MultiFileChooser"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--action"
+            ], 
+            "display_name": "action", 
+            "help": "Check/activate", 
+            "default": null, 
+            "nargs": "", 
+            "choices": [
+              "check", 
+              "activate"
+            ]
+          }, 
+          "required": false, 
+          "type": "Dropdown"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--asst"
+            ], 
+            "display_name": "asst", 
+            "help": "PSOrthoTile analytic,PSOrthoTile analytic_dn,PSOrthoTile visual,PSScene4Band analytic,PSScene4Band analytic_dn,PSScene3Band analytic,PSScene3Band analytic_dn,PSScene3Band visual,REOrthoTile analytic,REOrthoTile visual", 
+            "default": null, 
+            "nargs": "", 
+            "choices": [
+              "PSOrthoTile analytic", 
+              "PSOrthoTile analytic_dn", 
+              "PSOrthoTile visual", 
+              "PSScene4Band analytic", 
+              "PSScene4Band analytic_dn", 
+              "PSScene3Band analytic", 
+              "PSScene3Band analytic_dn", 
+              "PSScene3Band visual", 
+              "REOrthoTile analytic", 
+              "REOrthoTile visual"
+            ]
+          }, 
+          "required": false, 
+          "type": "Dropdown"
+        }
+      ]
+    }, 
+    "downloadpl": {
+      "command": "downloadpl", 
+      "contents": [
+        {
+          "data": {
+            "commands": [
+              "--aoi"
+            ], 
+            "display_name": "aoi", 
+            "help": "Choose JSON file created earlier", 
+            "default": "Choose JSON file to be used with Planet API/Created Earlier", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "MultiFileChooser"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--action"
+            ], 
+            "display_name": "action", 
+            "help": "choose download", 
+            "default": "download", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "TextField"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--asst"
+            ], 
+            "display_name": "asst", 
+            "help": "PSOrthoTile analytic,PSOrthoTile analytic_dn,PSOrthoTile visual,PSScene4Band analytic,PSScene4Band analytic_dn,PSScene3Band analytic,PSScene3Band analytic_dn,PSScene3Band visual,REOrthoTile analytic,REOrthoTile visual", 
+            "default": null, 
+            "nargs": "", 
+            "choices": [
+              "PSOrthoTile analytic", 
+              "PSOrthoTile analytic_dn", 
+              "PSOrthoTile visual", 
+              "PSScene4Band analytic", 
+              "PSScene4Band analytic_dn", 
+              "PSScene3Band analytic", 
+              "PSScene3Band analytic_dn", 
+              "PSScene3Band visual", 
+              "REOrthoTile analytic", 
+              "REOrthoTile visual", 
+              "PSOrthoTile analytic_xml", 
+              "PSOrthoTile analytic_dn_xml", 
+              "PSOrthoTile visual_xml", 
+              "PSScene4Band analytic_xml", 
+              "PSScene4Band analytic_dn_xml", 
+              "PSScene3Band analytic_xml", 
+              "PSScene3Band analytic_dn_xml", 
+              "PSScene3Band visual_xml", 
+              "REOrthoTile analytic_xml", 
+              "REOrthoTile visual_xml"
+            ]
+          }, 
+          "required": false, 
+          "type": "Dropdown"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--pathway"
+            ], 
+            "display_name": "pathway", 
+            "help": "Folder Path where PlanetAssets are saved example ./PlanetScope ./RapidEye", 
+            "default": "Folder where you want to save assets", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "MultiDirChooser"
+        }
+      ]
+    }, 
+    "metadata": {
+      "command": "metadata", 
+      "contents": [
+        {
+          "data": {
+            "commands": [
+              "--asset"
+            ], 
+            "display_name": "asset", 
+            "help": "RapidEye/PlantScope/DigitalGlobe MS/DigitalGlobe Pan(RE/PS/DGMS/DGP)?", 
+            "default": "PS", 
+            "nargs": "", 
+            "choices": [
+              "PSO", 
+              "PSO_DN", 
+              "PSO_V", 
+              "PS4B", 
+              "PS4B_DN", 
+              "PS3B", 
+              "PS3B_DN", 
+              "PS3B_V", 
+              "REO", 
+              "REO_V", 
+              "DGMS", 
+              "DGP"
+            ]
+          }, 
+          "required": false, 
+          "type": "Dropdown"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--mf"
+            ], 
+            "display_name": "mf", 
+            "help": "Metadata folder", 
+            "default": "Metadata folder", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "MultiDirChooser"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--mfile"
+            ], 
+            "display_name": "mfile", 
+            "help": "Metadata filename to be exported with Path.csv", 
+            "default": "Metadata filename browse and create file and click open", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "MultiFileChooser"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--errorlog"
+            ], 
+            "display_name": "errorlog", 
+            "help": "Errorlog to be exported along with Path.csv", 
+            "default": "Error log browse and create file and click open", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "MultiFileChooser"
+        }
+      ]
+    }, 
+    "ee_user": {
+      "command": "ee_user", 
+      "contents": []
+    }, 
+    "create": {
+      "command": "create", 
+      "contents": [
+        {
+          "data": {
+            "commands": [
+              "--typ"
+            ], 
+            "display_name": "typ", 
+            "help": "Specify type: collection or folder", 
+            "default": null, 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": true, 
+          "type": "TextField"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--path"
+            ], 
+            "display_name": "path", 
+            "help": "This is the path for the earth engine asset to be created full path is needsed eg: users/johndoe/collection", 
+            "default": null, 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": true, 
+          "type": "TextField"
+        }
+      ]
+    }, 
+    "upload": {
+      "command": "upload", 
+      "contents": [
+        {
+          "data": {
+            "commands": [
+              "-u", 
+              "--user"
+            ], 
+            "display_name": "user", 
+            "help": "Google account name (gmail address).", 
+            "default": null, 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": true, 
+          "type": "TextField"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--source"
+            ], 
+            "display_name": "source", 
+            "help": "Path to the directory with images for upload.", 
+            "default": null, 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": true, 
+          "type": "TextField"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--dest"
+            ], 
+            "display_name": "dest", 
+            "help": "Destination. Full path for upload to Google Earth Engine, e.g. users/pinkiepie/myponycollection", 
+            "default": null, 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": true, 
+          "type": "TextField"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "-m", 
+              "--metadata"
+            ], 
+            "display_name": "metadata", 
+            "help": "Path to CSV with metadata.", 
+            "default": null, 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "TextField"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--nodata"
+            ], 
+            "display_name": "nodata", 
+            "help": "The value to burn into the raster as NoData (missing data)", 
+            "default": null, 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "TextField"
+        }
+      ]
+    }, 
+    "lst": {
+      "command": "lst", 
+      "contents": [
+        {
+          "data": {
+            "commands": [
+              "--location"
+            ], 
+            "display_name": "location", 
+            "help": "This it the location of your folder/collection", 
+            "default": null, 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": true, 
+          "type": "TextField"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--type"
+            ], 
+            "display_name": "type", 
+            "help": "Whether you want the list to be printed or output as text", 
+            "default": null, 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": true, 
+          "type": "TextField"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--items"
+            ], 
+            "display_name": "items", 
+            "help": "Number of items to list", 
+            "default": null, 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "TextField"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--folder"
+            ], 
+            "display_name": "folder", 
+            "help": "Folder location for report to be exported", 
+            "default": null, 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "TextField"
+        }
+      ]
+    }, 
+    "tasks": {
+      "command": "tasks", 
+      "contents": []
+    }, 
+    "taskquery": {
+      "command": "taskquery", 
+      "contents": [
+        {
+          "data": {
+            "commands": [
+              "--destination"
+            ], 
+            "display_name": "destination", 
+            "help": "Full path to asset where you are uploading files", 
+            "default": "users/folder/collection", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "TextField"
+        }
+      ]
+    }, 
+    "report": {
+      "command": "report", 
+      "contents": [
+        {
+          "data": {
+            "commands": [
+              "--r"
+            ], 
+            "display_name": "r", 
+            "help": "Folder Path where the reports will be saved", 
+            "default": "Folder Path where the reports will be saved", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "MultiDirChooser"
+        }
+      ]
+    }, 
+    "cancel": {
+      "command": "cancel", 
+      "contents": []
+    }, 
+    "mover": {
+      "command": "mover", 
+      "contents": [
+        {
+          "data": {
+            "commands": [
+              "--assetpath"
+            ], 
+            "display_name": "assetpath", 
+            "help": "Existing path of assets", 
+            "default": "users/folder/collection1", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "TextField"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--finalpath"
+            ], 
+            "display_name": "finalpath", 
+            "help": "New path for assets", 
+            "default": "users/folder/collection2", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "TextField"
+        }
+      ]
+    }, 
+    "copy": {
+      "command": "copy", 
+      "contents": [
+        {
+          "data": {
+            "commands": [
+              "--initial"
+            ], 
+            "display_name": "initial", 
+            "help": "Existing path of assets", 
+            "default": "users/folder/collection1", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "TextField"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--final"
+            ], 
+            "display_name": "final", 
+            "help": "New path for assets", 
+            "default": "users/folder/collection2", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "TextField"
+        }
+      ]
+    }, 
+    "collprop": {
+      "command": "collprop", 
+      "contents": [
+        {
+          "data": {
+            "commands": [
+              "--coll"
+            ], 
+            "display_name": "coll", 
+            "help": "Path of Image Collection", 
+            "default": "users/folder/collection", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "TextField"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--p"
+            ], 
+            "display_name": "p", 
+            "help": "system:description=Description|system:title=title", 
+            "default": "system:description=Description", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "TextField"
+        }
+      ]
+    }, 
+    "access": {
+      "command": "access", 
+      "contents": [
+        {
+          "data": {
+            "commands": [
+              "--mode"
+            ], 
+            "display_name": "mode", 
+            "help": "This lets you select if you want to change permission or folder/collection/image", 
+            "default": "folder|collection|image", 
+            "nargs": "", 
+            "choices": [
+              "folder", 
+              "collection", 
+              "image"
+            ]
+          }, 
+          "required": true, 
+          "type": "Dropdown"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--asset"
+            ], 
+            "display_name": "asset", 
+            "help": "This is the path to the earth engine asset whose permission you are changing folder/collection/image", 
+            "default": "users/folder/collection", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": true, 
+          "type": "TextField"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--user"
+            ], 
+            "display_name": "user", 
+            "help": "This is the email address to whom you want to give read or write permission Usage: \"john@doe.com:R\" or \"john@doe.com:W\" R/W refers to read or write permission", 
+            "default": "john@doe.com:R", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": true, 
+          "type": "TextField"
+        }
+      ]
+    }, 
+    "delete": {
+      "command": "delete", 
+      "contents": [
+        {
+          "data": {
+            "commands": [], 
+            "display_name": "id", 
+            "help": "Full path to asset for deletion. Recursively removes all folders, collections and images.", 
+            "default": "users/folder/collection", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": true, 
+          "type": "TextField"
+        }
+      ]
+    }, 
+    "convert2ft": {
+      "command": "convert2ft", 
+      "contents": [
+        {
+          "data": {
+            "commands": [
+              "--i"
+            ], 
+            "display_name": "i", 
+            "help": "input feature source (KML, SHP, SpatiLite, etc.)", 
+            "default": "input feature source (KML, SHP, SpatiLite, etc.)", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": true, 
+          "type": "MultiFileChooser"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--o"
+            ], 
+            "display_name": "o", 
+            "help": "output Fusion Table name", 
+            "default": null, 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": true, 
+          "type": "TextField"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--add_missing"
+            ], 
+            "display_name": "add_missing", 
+            "help": "add missing features from the last inserted feature index", 
+            "default": false, 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "CheckBox"
+        }
+      ]
+    }, 
+    "cleanout": {
+      "command": "cleanout", 
+      "contents": [
+        {
+          "data": {
+            "commands": [
+              "--dirpath"
+            ], 
+            "display_name": "dirpath", 
+            "help": "Folder you want to delete after all processes have been completed", 
+            "default": null, 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "MultiDirChooser"
+        }
+      ]
+    }
+  }, 
+  "program_name": "Planet and EE Pipeline", 
+  "progress_regex": null, 
+  "program_description": "Planet and EE Pipeline", 
+  "layout_type": "column", 
+  "show_advanced": true
+}

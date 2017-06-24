@@ -1,0 +1,49 @@
+2017-06-08 12:27:47,917 :: oauth2client.transport :: INFO :: Attempting refresh to obtain initial access_token
+2017-06-08 12:27:47,917 :: oauth2client.client :: INFO :: Refreshing access_token
+2017-06-08 12:28:25,092 :: oauth2client.transport :: INFO :: Attempting refresh to obtain initial access_token
+2017-06-08 12:28:25,092 :: oauth2client.client :: INFO :: Refreshing access_token
+2017-06-08 12:29:16,198 :: root :: WARNING :: Collection users/samapriya/dgbuffer already exists
+2017-06-08 12:29:17,378 :: root :: INFO :: Processing image 1 out of 3: C:\planet_demo\ps\229190_1552719_2016-08-26_0c78_analytic.tif
+2017-06-08 12:33:00,344 :: root :: INFO :: Processing image 2 out of 3: C:\planet_demo\ps\229190_1552818_2016-08-26_0c78_analytic.tif
+2017-06-08 12:36:19,427 :: root :: INFO :: Processing image 3 out of 3: C:\planet_demo\ps\229190_1552820_2016-08-26_0c78_analytic.tif
+2017-06-11 10:28:49,566 :: oauth2client.transport :: INFO :: Attempting refresh to obtain initial access_token
+2017-06-11 10:28:49,566 :: oauth2client.client :: INFO :: Refreshing access_token
+2017-06-11 10:38:10,349 :: oauth2client.transport :: INFO :: Attempting refresh to obtain initial access_token
+2017-06-11 10:38:10,349 :: oauth2client.client :: INFO :: Refreshing access_token
+2017-06-11 17:45:33,352 :: oauth2client.transport :: INFO :: Attempting refresh to obtain initial access_token
+2017-06-11 17:45:33,352 :: oauth2client.client :: INFO :: Refreshing access_token
+2017-06-11 17:56:48,338 :: oauth2client.transport :: INFO :: Attempting refresh to obtain initial access_token
+2017-06-11 17:56:48,338 :: oauth2client.client :: INFO :: Refreshing access_token
+2017-06-11 17:56:58,779 :: root :: WARNING :: Collection users/samapriya/dgbuffer already exists
+2017-06-11 17:57:00,016 :: root :: INFO :: Processing image 1 out of 3: C:\planet_demo\ps\229190_1552719_2016-08-26_0c78_analytic.tif
+2017-06-11 17:58:15,888 :: root :: INFO :: Processing image 2 out of 3: C:\planet_demo\ps\229190_1552818_2016-08-26_0c78_analytic.tif
+2017-06-11 17:59:18,563 :: root :: INFO :: Processing image 3 out of 3: C:\planet_demo\ps\229190_1552820_2016-08-26_0c78_analytic.tif
+2017-06-11 18:02:01,369 :: oauth2client.transport :: INFO :: Attempting refresh to obtain initial access_token
+2017-06-11 18:02:01,369 :: oauth2client.client :: INFO :: Refreshing access_token
+2017-06-11 18:04:36,885 :: oauth2client.transport :: INFO :: Attempting refresh to obtain initial access_token
+2017-06-11 18:04:36,885 :: oauth2client.client :: INFO :: Refreshing access_token
+2017-06-11 18:04:48,733 :: oauth2client.transport :: INFO :: Attempting refresh to obtain initial access_token
+2017-06-11 18:04:48,733 :: oauth2client.client :: INFO :: Refreshing access_token
+2017-06-11 18:05:12,604 :: oauth2client.transport :: INFO :: Attempting refresh to obtain initial access_token
+2017-06-11 18:05:12,604 :: oauth2client.client :: INFO :: Refreshing access_token
+2017-06-11 19:15:17,759 :: oauth2client.transport :: INFO :: Attempting refresh to obtain initial access_token
+2017-06-11 19:15:17,759 :: oauth2client.client :: INFO :: Refreshing access_token
+2017-06-11 22:14:41,565 :: oauth2client.transport :: INFO :: Attempting refresh to obtain initial access_token
+2017-06-11 22:14:41,569 :: oauth2client.client :: INFO :: Refreshing access_token
+2017-06-11 22:18:38,075 :: oauth2client.transport :: INFO :: Attempting refresh to obtain initial access_token
+2017-06-11 22:18:38,075 :: oauth2client.client :: INFO :: Refreshing access_token
+2017-06-11 23:00:28,992 :: oauth2client.transport :: INFO :: Attempting refresh to obtain initial access_token
+2017-06-11 23:00:28,992 :: oauth2client.client :: INFO :: Refreshing access_token
+2017-06-11 23:00:38,543 :: root :: WARNING :: Collection users/samapriya/dgbuffer already exists
+2017-06-11 23:00:39,841 :: root :: INFO :: Collection already exists. 2 assets left for upload to users/samapriya/dgbuffer.
+2017-06-11 23:00:39,841 :: root :: INFO :: Processing image 1 out of 2: C:\planet_demo\ps\229190_1552719_2016-08-26_0c78_analytic.tif
+2017-06-11 23:08:30,497 :: oauth2client.transport :: INFO :: Attempting refresh to obtain initial access_token
+2017-06-11 23:08:30,513 :: oauth2client.client :: INFO :: Refreshing access_token
+2017-06-11 23:08:40,608 :: root :: WARNING :: Collection users/samapriya/dgbuffer already exists
+2017-06-11 23:08:42,036 :: root :: INFO :: Processing image 1 out of 3: C:\planet_demo\ps\229190_1552719_2016-08-26_0c78_analytic.tif
+2017-06-11 23:10:01,012 :: root :: INFO :: Processing image 2 out of 3: C:\planet_demo\ps\229190_1552818_2016-08-26_0c78_analytic.tif
+2017-06-11 23:11:01,512 :: root :: INFO :: Processing image 3 out of 3: C:\planet_demo\ps\229190_1552820_2016-08-26_0c78_analytic.tif
+2017-06-14 10:06:23,262 :: oauth2client.transport :: INFO :: Attempting refresh to obtain initial access_token
+2017-06-14 10:06:23,262 :: oauth2client.client :: INFO :: Refreshing access_token
+2017-06-14 10:07:15,927 :: oauth2client.transport :: INFO :: Attempting refresh to obtain initial access_token
+2017-06-14 10:07:15,927 :: oauth2client.client :: INFO :: Refreshing access_token
