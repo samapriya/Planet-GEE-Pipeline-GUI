@@ -1,6 +1,6 @@
 # Planet GEE Pipeline GUI
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.817610.svg)](https://doi.org/10.5281/zenodo.817610)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.817739.svg)](https://doi.org/10.5281/zenodo.817739)
 [![JetStream](https://img.shields.io/badge/SupportedBy%3A-JetStream-brightgreen.svg)](https://jetstream-cloud.org/)
 [![Planet](https://img.shields.io/badge/SupportedBy%3A-Planet%20Ambassador%20Program-brightgreen.svg)](https://www.planet.com/products/education-and-research/)
 
